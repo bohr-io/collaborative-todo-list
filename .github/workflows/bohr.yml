@@ -1,5 +1,5 @@
-name: bohr.rocks deploy
-on:
+name: bohr.io deploy
+on: 
   push:
   repository_dispatch:
     types: [bohr-dispatch]
@@ -11,5 +11,3 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: bohr-io/action@main
-        with:
-          cli-version: "@bohr.io/bohr-dev@dev"
